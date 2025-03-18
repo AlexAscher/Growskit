@@ -195,14 +195,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
 }
 .rotated {
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out; /* Плавный поворот */
-}
-.marginzero {
-  margin-bottom: 0;
 }
 .add-form-btn {
   border: 2px dashed #f8ccf480;
