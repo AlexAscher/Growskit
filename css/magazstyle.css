@@ -1,0 +1,682 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+.top {
+  padding-left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1246px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header {
+  margin: 22px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 77px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.btn.primary {
+  background: white;
+  color: black;
+}
+.skitluxe h2 {
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 49px;
+  margin-left: 15px;
+}
+.skitluxe {
+  width: 47%;
+  margin-top: 7%;
+  margin-bottom: 25px;
+}
+.skitluxe h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  line-height: 23.54px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+  margin-left: 15px;
+}
+.podrobnee {
+  display: flex;
+  align-items: center;
+  padding: 30px 24px;
+  background-color: white;
+  gap: 8px;
+  max-width: max-content;
+  border-radius: 45px;
+}
+.podrobnee h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+  color: black;
+}
+.heart h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.partheart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.minikrug {
+  background: #efc1ff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #ffffff;
+}
+.partheart h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.whattodo {
+  position: relative;
+}
+.piar {
+  position: absolute;
+  top: -136px;
+  left: 15%;
+}
+.povish {
+  position: absolute;
+  top: -85px;
+  left: 25%;
+}
+.oppor {
+  position: absolute;
+  top: -110px;
+  left: 57%;
+}
+.kontakt {
+  position: absolute;
+  top: -50px;
+  right: 6%;
+}
+.obmen {
+  position: absolute;
+  top: 0px;
+  left: 5%;
+}
+.delov {
+  position: absolute;
+  bottom: -80px;
+  left: 15%;
+}
+.prestizh {
+  position: absolute;
+  bottom: -120px;
+  left: 42%;
+}
+.positive {
+  position: absolute;
+  bottom: -100px;
+  right: 18%;
+}
+.magazine {
+  height: 751px;
+  background: url(../img/magazinmain.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto; /* Центрирует секцию */
+  width: 100%; /* Растягивает на всю доступную ширину */
+  display: flex;
+  justify-content: center;
+}
+
+.magazines {
+  position: absolute;
+  z-index: 3;
+  right: -9%;
+  top: 6%;
+}
+@media (min-width: 1400px) {
+  .glanets {
+    width: 1246px;
+  }
+}
+@media (min-width: 1400px) {
+  header {
+    max-width: 1400px;
+  }
+}
+.glanets {
+  position: relative;
+}
+.packets {
+  margin-bottom: 94px;
+}
+.packets h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0%;
+  color: #efdaed;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.mini {
+  padding: 16px 24px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  width: max-content;
+  margin-bottom: 16px;
+}
+.mini h3 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29.82px;
+  letter-spacing: 0%;
+  color: white;
+}
+.packet {
+  border-radius: 15px;
+  padding: 32px;
+  border-width: 1.5px;
+  border: 1.5px solid #ffffff;
+  background: linear-gradient(
+    239.57deg,
+    rgba(255, 255, 255, 0.56) 0%,
+    rgba(255, 255, 255, 0.035) 100%
+  );
+  backdrop-filter: blur(30px);
+}
+.packets h4 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 24px;
+}
+.packets h5 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.36px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 16px;
+}
+.packets p {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: white;
+}
+.galochka {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.packet button {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 16px;
+  border: none;
+  gap: 8px;
+  margin-top: 76px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: black;
+}
+.forgap {
+  --bs-gutter-x: 50px;
+  position: relative;
+}
+.krugifonnomin {
+  position: absolute;
+  top: -15%;
+}
+.rightpart h2 {
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-bottom: 49px;
+  color: #efdaed;
+}
+.rightpart h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-bottom: 28px;
+}
+.rightpart {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 28px;
+}
+.rightpart ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+}
+.rightpart li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 50%;
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  width: 4px; /* Размер кружочка */
+  height: 4px;
+  background-color: white; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.rightpart li {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: 0%;
+  position: relative;
+  padding-left: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+.forprices h4 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+  margin-bottom: 16px;
+}
+.forprices h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.forprices p {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #adadad;
+  margin-bottom: 8px;
+}
+.forprices h6 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+  text-align: end;
+}
+.prices {
+  margin-top: 59px;
+}
+
+.forprices .row {
+  display: flex;
+  align-items: flex-end; /* Прижимает содержимое вниз */
+}
+.liniya {
+  border: 1px solid #ffffff80;
+  margin: 24px 0;
+}
+.leftpart h2 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 51px;
+}
+.form-container {
+  background: transparent;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #888;
+}
+.topofform {
+  margin-bottom: 15px;
+}
+.input-box {
+  width: 100%;
+  padding: 24px;
+  margin: 10px 0;
+  background: #000;
+  border: 1px solid #888;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+}
+.input-row {
+  display: flex;
+  gap: 16px;
+}
+.input-row .input-box {
+  flex: 1;
+}
+.info-text {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 5px;
+}
+.submit-btn {
+  background: white;
+  color: black;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0 0 auto;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+}
+.forgapnearbottom {
+  --bs-gutter-x: 63px;
+}
+.form-container h2 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+  color: white;
+  width: 90%;
+}
+.progress-bar1 {
+  display: flex;
+  gap: 4px;
+}
+
+.pink {
+  width: 20px;
+  height: 53px;
+  background-color: #ff7bcb;
+  border-radius: 5px;
+}
+.empty {
+  width: 20px;
+  height: 53px;
+  border: 2px solid #ffffffb2;
+  border-radius: 5px;
+}
+.topofform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-box::placeholder {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  letter-spacing: 0%;
+  color: #efdaed;
+}
+.telephone {
+  flex: 4 !important;
+}
+.email {
+  flex: 6 !important;
+}
+.form-container p {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13.92px;
+  letter-spacing: 0%;
+  color: #ffffffb2;
+}
+.forma {
+  position: relative;
+  margin-bottom: 10%;
+}
+.gift {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 75px;
+}
+.gap h6 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.trophy {
+  position: absolute;
+}
+.leftside {
+  margin-top: 70px;
+}
+.footer {
+  background: linear-gradient(#151515cc, #151515cc),
+    url(../img/glitter.png) no-repeat;
+  background-size: cover;
+}
+.footpad {
+  padding-top: 78px;
+}
+.footer h2 {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+  margin-bottom: 24px;
+}
+.footer h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.34px;
+  color: white;
+  margin-bottom: 24px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: white;
+}
+.telegram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 18.56px;
+}
+.footlin {
+  width: 100%;
+  border: 1px solid #efdaed;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.footer h6 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.24px;
+  color: white;
+}
+.rightfoot {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.forfootik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.forsmalldivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1230px;
+  }
+}

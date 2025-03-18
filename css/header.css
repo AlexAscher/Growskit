@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+.top {
+  padding-left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1246px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header {
+  margin: 22px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 77px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.btn.primary {
+  background: white;
+  color: black;
+}

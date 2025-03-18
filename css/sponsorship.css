@@ -1,0 +1,549 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+.top {
+  padding-left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1246px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header {
+  margin: 22px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 77px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.btn.primary {
+  background: white;
+  color: black;
+}
+.main h2 {
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+}
+.main {
+  margin-top: 7%;
+  position: relative;
+}
+@media (min-width: 1400px) {
+  header {
+    max-width: 1400px;
+  }
+}
+.main h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.sponsors {
+  border: 2px solid #ffffffbf;
+  padding: 39px 40px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors1 {
+  padding: 39px 40px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #f8ccf480;
+  border-style: dashed;
+  align-items: center;
+}
+.zavitka {
+  position: absolute;
+  width: 186px;
+  height: 113px;
+  right: 9%;
+  top: 48%;
+}
+.zdes {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  position: absolute;
+  right: 14%;
+  top: 66%;
+  text-align: right;
+}
+.forstrelka {
+  position: absolute;
+  right: 0;
+}
+.forstrelka h4 {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.sponsors img {
+  width: 100%;
+  object-fit: contain;
+}
+.forgap {
+  --bs-gutter-x: 50px;
+  margin-top: 95px;
+  position: relative;
+}
+.plashka {
+  position: absolute;
+  background: #ffffff;
+  border: 2px solid #ffffffbf;
+  padding: 16px;
+  border-radius: 30px;
+  width: max-content;
+  top: -25px;
+}
+.plashka h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0e0e10;
+  text-align: center;
+}
+.forma {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+.forma h2 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  width: 57%;
+  color: white;
+  margin-bottom: 47px;
+}
+.custom-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.custom-form .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.custom-form input,
+.custom-form textarea {
+  border: 1px solid #efdaed80;
+  background: transparent;
+  padding: 10px 12px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.custom-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.radio,
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.radio input {
+  display: none;
+}
+
+.radio-custom,
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #efdaed80;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.radio input:checked + .radio-custom::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #efdaed;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-custom {
+  border-radius: 3px;
+}
+
+.checkbox input:checked + .checkbox-custom::after {
+  content: "✔";
+  font-size: 12px;
+  color: #efdaed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upload-info {
+  color: white;
+  font-size: 14px;
+}
+
+.upload-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.upload-info li {
+  position: relative;
+  padding-left: 12px;
+}
+
+.upload-info li::before {
+  content: "•";
+  color: #efdaed;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.submit-btn {
+  background: white;
+  color: black;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+  text-align: center;
+  margin-top: 20px;
+}
+.sponsor-form input,
+.sponsor-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid #efdaed80;
+  color: white;
+  font-family: Gilroy;
+  font-size: 14px;
+}
+.sponsor-form textarea {
+  height: 80px;
+  resize: none;
+}
+.radio-group,
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1px;
+  margin-bottom: 13px;
+}
+.radio-group label,
+.checkbox {
+  color: white;
+  font-size: 14px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.upload-info p,
+.upload-info ul {
+  color: white;
+  font-size: 14px;
+}
+.upload-info ul {
+  padding-left: 15px;
+}
+.submit-btn {
+  background: white;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.telmail {
+  display: flex;
+  gap: 16px;
+}
+.radio-group input {
+  width: max-content;
+  margin-bottom: 0;
+}
+.radio-group {
+  display: flex;
+  gap: 48px;
+}
+input[type="text"],
+textarea {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+  background: transparent; /* Если нужен прозрачный фон */
+  border: 1px solid #efdaed80; /* Если нужна рамка */
+  padding: 24px !important; /* Чтобы текст не прижимался к краям */
+  border-radius: 5px; /* Скругление углов */
+  border-radius: 15px;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #efdaed;
+}
+.forma p,
+.forma li {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 8px;
+}
+.upload-info {
+  margin-top: 4px;
+  margin-bottom: 13px;
+}
+.fortg {
+  display: flex;
+  align-items: center;
+}
+.checkbox1 {
+  margin-top: 20px;
+}
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  width: 21px;
+  height: 21px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 3.24px 5.4px 0px rgba(46, 46, 66, 0.08);
+  border: 2.16px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkmark::after {
+  content: "";
+  display: none;
+  width: 10px;
+  height: 16px;
+  margin-bottom: 2px;
+  border: solid #df70bc;
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+/* .custom-checkbox input:checked + .checkmark {
+  border-color: #df70bc;
+} */
+
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+.fornizh {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.fornizh span {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #efdaed;
+}
+.forsendbutton .submit-btn {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0e0e10;
+  padding: 16px 40px;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-top: 0;
+}
+.forsendbutton h3 {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff99;
+}
+.forsendbutton {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}

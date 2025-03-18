@@ -1,0 +1,874 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+.top {
+  padding-left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1246px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+.growing {
+  margin-top: 101px;
+}
+.growing img {
+  max-width: 100%;
+}
+.growing h3 {
+  color: white;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+}
+.alicenter {
+  align-items: center;
+}
+.header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 77px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.btn.primary {
+  background: white;
+  color: black;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.date h4 {
+  color: white;
+  font-size: 28.61px;
+  font-family: Kreadon;
+  font-weight: 700;
+  line-height: 34.59px;
+  letter-spacing: 5%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.awards {
+  margin-left: 15px;
+}
+.participate-btn {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 45px;
+  background-color: white;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.63px;
+  margin-top: 23px;
+}
+.participate-btn img {
+  margin-left: 8px;
+}
+.back {
+  background: url(../img/premback.png) no-repeat;
+  background-size: cover;
+}
+.nominations {
+  font-family: Kreadon;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 45.5px;
+  color: #efdaed;
+  margin-top: 63px;
+}
+.one {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+}
+.nominations h3 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 5%;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.nominations h4 {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16.14px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.nominations h2 {
+  margin-bottom: 5%;
+}
+.one {
+  position: relative;
+  width: 344px;
+  justify-self: center;
+}
+.imgone {
+  position: absolute;
+  left: -10%;
+  top: -20%;
+}
+.two {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 398px;
+}
+.imgtwo {
+  position: absolute;
+  left: -15%;
+  top: -20%;
+}
+.three {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 337px;
+}
+.imgthree {
+  position: absolute;
+  left: -15%;
+  top: -18%;
+}
+.four {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 370px;
+}
+.imgfour {
+  position: absolute;
+  left: -15%;
+  top: -18%;
+}
+
+.flexboxx {
+  display: flex;
+  flex-direction: column; /* Главная ось – вертикальная */
+  align-items: center; /* Центрируем грид */
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5fr); /* 3 колонки */
+  row-gap: 70px; /* Вертикальный отступ */
+  column-gap: 60px; /* Горизонтальный отступ */
+}
+@media (min-width: 1400px) {
+  .grid-container {
+    max-width: 1200px;
+  }
+}
+.five {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 382px;
+  justify-self: center;
+}
+.imgfive {
+  position: absolute;
+  left: -15%;
+  top: -18%;
+}
+.six {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 350px;
+}
+.imgsix {
+  position: absolute;
+  left: -15%;
+  top: -18%;
+}
+.seven {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 370px;
+}
+.imgseven {
+  position: absolute;
+  left: -15%;
+  top: -18%;
+}
+.eight {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 404px;
+}
+.imgeight {
+  position: absolute;
+  left: -12%;
+  top: -18%;
+}
+.nine {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 382px;
+}
+.imgnine {
+  position: absolute;
+  left: -14%;
+  top: -18%;
+}
+.ten {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 356px;
+  justify-self: end;
+}
+.imgten {
+  position: absolute;
+  left: -28%;
+  top: -28%;
+}
+.eleven {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 317px;
+  justify-self: center;
+}
+.imgeleven {
+  position: absolute;
+  left: -34%;
+  top: -20%;
+}
+.twelve {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 320px;
+  justify-self: center;
+}
+.imgtwelve {
+  position: absolute;
+  left: -28%;
+  top: -20%;
+}
+.thirteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 330px;
+  justify-self: center;
+}
+.imgthirteen {
+  position: absolute;
+  left: -34%;
+  top: -31%;
+}
+.fourteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 356px;
+  justify-self: center;
+}
+.imgfourteen {
+  position: absolute;
+  left: -28%;
+  top: -20%;
+}
+.fifteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 320px;
+  justify-self: center;
+}
+.imgfifteen {
+  position: absolute;
+  left: -28%;
+  top: -20%;
+}
+.sixteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 340px;
+  justify-self: center;
+}
+.imgsixteen {
+  position: absolute;
+  left: -32%;
+  top: -29%;
+}
+.seventeen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 356px;
+  justify-self: center;
+}
+.imgseventeen {
+  position: absolute;
+  left: -28%;
+  top: -29%;
+}
+.eightteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 320px;
+  justify-self: center;
+}
+.imgeightteen {
+  position: absolute;
+  left: -28%;
+  top: -29%;
+}
+.flexboxx1 {
+  display: flex;
+  flex-direction: column; /* Главная ось – вертикальная */
+  align-items: center; /* Центрируем грид */
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 91px;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr); /* 3 колонки */
+  row-gap: 70px; /* Вертикальный отступ */
+  column-gap: 130px; /* Горизонтальный отступ */
+}
+@media (min-width: 1400px) {
+  .grid-container1 {
+    max-width: 1200px;
+  }
+}
+.nineteen {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 439px;
+  justify-self: end;
+}
+.imgnineteen {
+  position: absolute;
+  left: -23%;
+  top: -29%;
+}
+.twenty {
+  border: 1px solid #efdaed;
+  padding: 16px 16px 16px 89px;
+  border-radius: 20px;
+  position: relative;
+  width: 439px;
+  justify-self: end;
+}
+.imgtwenty {
+  position: absolute;
+  left: -25%;
+  top: -29%;
+}
+.packets {
+  margin-bottom: 94px;
+}
+.packets h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0%;
+  color: #efdaed;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.mini {
+  padding: 16px 24px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  width: max-content;
+  margin-bottom: 16px;
+}
+.mini h3 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29.82px;
+  letter-spacing: 0%;
+  color: white;
+}
+.packet {
+  border-radius: 15px;
+  padding: 32px;
+  border-width: 1.5px;
+  border: 1.5px solid #ffffff;
+  background: linear-gradient(
+    239.57deg,
+    rgba(255, 255, 255, 0.56) 0%,
+    rgba(255, 255, 255, 0.035) 100%
+  );
+  backdrop-filter: blur(30px);
+}
+.packets h4 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 24px;
+}
+.packets h5 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.36px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 16px;
+}
+.packets p {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: white;
+}
+.galochka {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.packet button {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 16px;
+  border: none;
+  gap: 8px;
+  margin-top: 76px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+  color: black;
+}
+.forgap {
+  --bs-gutter-x: 50px;
+  position: relative;
+}
+.krugifonnomin {
+  position: absolute;
+  top: -15%;
+}
+.stante h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 43px;
+}
+.stante h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.54px;
+  letter-spacing: 0%;
+  color: white;
+  margin-bottom: 70px;
+}
+.uchast h4 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.18px;
+  letter-spacing: 0%;
+  color: #efdaed;
+  margin-bottom: 24px;
+}
+.uchast h5 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: 0%;
+  color: white;
+}
+.uchast li {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: 0%;
+  position: relative;
+  padding-left: 20px;
+  color: white;
+}
+.uchast ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+}
+.uchast li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 50%;
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  width: 4px; /* Размер кружочка */
+  height: 4px;
+  background-color: white; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.price h2 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.24px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration: line-through;
+  color: #adadad;
+}
+.price h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30.22px;
+  letter-spacing: 0%;
+  color: #efdaed;
+  text-align: right;
+}
+.stoimost {
+  margin-bottom: 73px;
+}
+.voprosi h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  letter-spacing: 0%;
+  color: white;
+}
+.forcont {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+.socialmedia {
+  display: flex;
+  gap: 16px;
+}
+.form-container {
+  background: transparent;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #888;
+}
+.topofform {
+  margin-bottom: 15px;
+}
+.input-box {
+  width: 100%;
+  padding: 24px;
+  margin: 10px 0;
+  background: #000;
+  border: 1px solid #888;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+}
+.input-row {
+  display: flex;
+  gap: 16px;
+}
+.input-row .input-box {
+  flex: 1;
+}
+.info-text {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 5px;
+}
+.submit-btn {
+  background: white;
+  color: black;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0 0 auto;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+}
+.forgapnearbottom {
+  --bs-gutter-x: 63px;
+}
+.form-container h2 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+  color: white;
+}
+.progress-bar1 {
+  display: flex;
+  gap: 4px;
+}
+
+.pink {
+  width: 20px;
+  height: 53px;
+  background-color: #ff7bcb;
+  border-radius: 5px;
+}
+.empty {
+  width: 20px;
+  height: 53px;
+  border: 2px solid #ffffffb2;
+  border-radius: 5px;
+}
+.topofform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-box::placeholder {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  letter-spacing: 0%;
+  color: #efdaed;
+}
+.telephone {
+  flex: 4 !important;
+}
+.email {
+  flex: 6 !important;
+}
+.form-container p {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13.92px;
+  letter-spacing: 0%;
+  color: #ffffffb2;
+}
+.forma {
+  position: relative;
+  margin-bottom: 10%;
+}
+.trophy {
+  position: absolute;
+}
+.leftside {
+  margin-top: 70px;
+}
+.footer {
+  background: linear-gradient(#151515cc, #151515cc),
+    url(../img/glitter.png) no-repeat;
+  background-size: cover;
+}
+.footpad {
+  padding-top: 78px;
+}
+.footer h2 {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+  margin-bottom: 24px;
+}
+.footer h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.34px;
+  color: white;
+  margin-bottom: 24px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: white;
+}
+.telegram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 18.56px;
+}
+.footlin {
+  width: 100%;
+  border: 1px solid #efdaed;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.footer h6 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.24px;
+  color: white;
+}
+.rightfoot {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.forfootik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.forsmalldivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1230px;
+  }
+}

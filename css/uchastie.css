@@ -1,0 +1,302 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+.top {
+  padding-left: 100px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1246px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+.header {
+  margin: 22px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 77px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  letter-spacing: 0%;
+}
+.btn.primary {
+  background: white;
+  color: black;
+}
+.regoplata {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.regoplata h2 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+  color: white;
+}
+.reg,
+.oplata {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 8px 12px;
+}
+.main {
+  margin-top: 3%;
+}
+.firstcontainer {
+  margin-bottom: 3%;
+}
+.nizhyaya-button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 32px;
+  margin-top: 64px;
+  margin-bottom: 7%;
+}
+.nizhyaya-button h4 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 8px;
+}
+.nizhyaya-button h5 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #fe82db;
+}
+.nizhyaya-button button {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #000000;
+  cursor: pointer;
+}
+.form {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.big-forma .row {
+  row-gap: 15px;
+}
+.secondh2 {
+  margin-bottom: 40px !important;
+}
+.second-text-area {
+  margin-top: 40px !important;
+}
+.topform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out; /* Плавный поворот */
+}
+.marginzero {
+  margin-bottom: 0;
+}
+.add-form-btn {
+  border: 2px dashed #f8ccf480;
+  width: 100%;
+  border-radius: 20px;
+  padding: 21px 40px;
+  background-color: transparent;
+}
+.sale h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.sale h4 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.sale p {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #adadad;
+}
+.sale {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.itogo h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.prices {
+  display: flex;
+  gap: 16px;
+}
+.prices h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: #adadad;
+  margin-top: 9px;
+}
+.prices p {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fe82db;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.oplata-button {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0e0e10;
+  background: #ffffff;
+  padding: 16px 32px;
+  border-radius: 30px;
+}
+.forjustify {
+  display: flex;
+  justify-content: center;
+}
+.nizh-after-form {
+  margin-top: 64px;
+  margin-bottom: 8%;
+}
+.rotated-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}

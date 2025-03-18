@@ -1,0 +1,82 @@
+.footer {
+  background: linear-gradient(#151515cc, #151515cc),
+    url(../img/glitter.png) no-repeat;
+  background-size: cover;
+}
+.footpad {
+  padding-top: 78px;
+}
+.footer h2 {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+  margin-bottom: 24px;
+}
+.footer h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.34px;
+  color: white;
+  margin-bottom: 24px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: white;
+}
+.telegram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 18.56px;
+}
+.footlin {
+  width: 100%;
+  border: 1px solid #efdaed;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.footer h6 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.24px;
+  color: white;
+}
+.rightfoot {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.forfootik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.forsmalldivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1230px;
+  }
+}

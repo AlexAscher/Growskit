@@ -1,0 +1,1286 @@
+body {
+  background-color: black;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Extrabold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.top_menu a {
+  font-family: "Gilroy";
+  color: #efdaed;
+  text-decoration: none;
+  line-height: 23.54px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  text-align: right;
+}
+.alicenter {
+  align-items: center;
+}
+nav button {
+  color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  padding: 16px;
+  background: transparent;
+  font-size: 16px;
+  font-family: Gilroy;
+  font-weight: 500;
+  z-index: 10;
+  position: relative;
+}
+.rightellipse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.biggrow {
+  max-width: 100%;
+  position: relative;
+  z-index: -10;
+}
+.main {
+  margin-top: 47px;
+  overflow-x: clip;
+  position: relative;
+  background: url(../img/hologirl.png) no-repeat;
+  background-position: center 30px;
+  padding-bottom: 100px;
+}
+.rotliniya {
+  border: 1px solid #efdaed4d;
+  transform: rotate(16.8deg);
+  width: 170%;
+  top: 450px;
+  position: absolute;
+  z-index: -1;
+  left: -5%;
+}
+.secondmain h2 {
+  color: white;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 40.11px;
+  margin-right: 40px;
+}
+.underrot {
+  margin-top: 95px;
+}
+.underrot h3 {
+  color: #efdaed;
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41.6px;
+}
+.date {
+  display: flex;
+  align-items: center;
+}
+.date h4 {
+  color: white;
+  font-size: 28.61px;
+  font-family: Kreadon;
+  font-weight: 700;
+  line-height: 34.59px;
+  letter-spacing: 5%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.lomanaya {
+  margin-top: 30px;
+  height: auto;
+  max-width: 100%;
+}
+.rightlom {
+  display: flex;
+  align-items: flex-start; /* Выравниваем img и текст по центру */
+}
+
+.text-rightlom {
+  display: flex;
+  flex-direction: column; /* h4 и p располагаются вертикально */
+  margin-left: 10px; /* Отступ от картинки */
+}
+
+.text-rightlom h4 {
+  color: #efdaed;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27.84px;
+  margin-bottom: 15px; /* Убираем стандартные отступы */
+}
+
+.text-rightlom p {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.14px;
+  color: white;
+  margin-left: 14px;
+}
+
+.rightlomm p {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.14px;
+  color: white;
+}
+.rightlomm h4 {
+  color: #efdaed;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27.84px;
+}
+.hologirl {
+  position: absolute;
+  left: 30%;
+  max-width: 100%;
+}
+.participate-btn {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 45px;
+  background-color: white;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.63px;
+  margin-top: 102px;
+}
+.participate-btn img {
+  margin-left: 8px;
+}
+.god {
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45.5px;
+  color: #efdaed;
+  text-align: right;
+  margin-top: 94px;
+  margin-bottom: 18px;
+}
+.podtverjday h6 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: white;
+}
+.leftmain {
+  position: absolute;
+}
+.smile {
+  margin-top: 200px;
+  overflow-x: clip;
+  position: relative;
+}
+.beg_stroka_parent {
+  width: 120%;
+  height: 72px;
+  background-color: #594c53;
+  transform: rotate(-8deg);
+  position: absolute;
+  left: -5%;
+}
+
+.beg_stroka p {
+  font-family: Kreadon;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: black;
+  display: inline-block;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 11px;
+}
+
+.beg_stroka_parent {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.beg_stroka {
+  font-size: sans-serif;
+  padding: 30px 0;
+  white-space: nowrap;
+  display: flex;
+  background-color: #df70bc;
+}
+.beg_stroka_parent1 {
+  width: 120%;
+  height: 72px;
+  background-color: #efdaed;
+  transform: rotate(3.76deg);
+  position: absolute;
+  left: -5%;
+}
+
+.beg_stroka1 p {
+  font-family: Kreadon;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: black;
+  display: inline-block;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 11px;
+}
+
+.beg_stroka_parent1 {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.beg_stroka1 {
+  font-size: sans-serif;
+  padding: 30px 0;
+  white-space: nowrap;
+  display: flex;
+  background-color: #efdaed;
+}
+.smile h2 {
+  font-family: Kreadon;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45.5px;
+  color: #efdaed;
+  margin-bottom: 48px;
+}
+.leftnom {
+  padding-top: 240px;
+}
+.blocks {
+  border: 2px solid white;
+  border-radius: 30px;
+  gap: 8px;
+  padding: 16px;
+}
+.blocks h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21.19px;
+  color: white;
+  text-align: center;
+}
+.imgsmile {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+}
+.galaxy {
+  display: flex;
+  align-items: center;
+}
+.galaxy h5 {
+  color: #cf8ece;
+  font-family: Gilroy;
+  font-weight: 600;
+  line-height: 28.63px;
+  font-size: 24px;
+  margin-right: 8px;
+}
+.purplearrow {
+  margin-top: 5px;
+}
+.categories {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.categories h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  line-height: 45.5px;
+  font-size: 35px;
+  color: #efdaed;
+}
+.categories h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  line-height: 18.83px;
+  font-size: 16px;
+  color: white;
+}
+.categ {
+  padding: 25px 24px 25px 24px;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.categ h4 {
+  margin-bottom: 24px;
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29.4px;
+  color: #ffdefc;
+}
+.categ h5 {
+  margin-bottom: 16px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: #ffffff;
+}
+.etopromenya {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px;
+  width: 173px;
+  border-radius: 59.63px;
+  margin-top: auto;
+}
+.categ h6 {
+  margin-right: 15%;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.56px;
+  color: black;
+}
+.topcateg {
+  padding: 25px 24px 25px 24px;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.topcateg h4 {
+  margin-bottom: 24px;
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29.4px;
+  color: #ffffff;
+}
+.topcateg h5 {
+  margin-bottom: 16px;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: #ffffff;
+}
+.topcateg h6 {
+  margin-right: 15%;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.56px;
+  color: black;
+}
+.etopromenya1 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px;
+  width: 173px;
+  border-radius: 59.63px;
+}
+.w20 {
+  width: 20%;
+}
+.tl26 {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  z-index: -1;
+}
+.tl17 {
+  position: absolute;
+  top: 25%;
+  right: -28%;
+  z-index: -1;
+}
+.tl27 {
+  position: absolute;
+  bottom: -20%;
+  right: -18%;
+  z-index: -1;
+}
+.tl6 {
+  position: absolute;
+  top: 50%;
+  right: -18%;
+  z-index: -1;
+}
+.cube {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 132px;
+}
+.bigcube {
+  width: 74%;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .bigcube {
+    max-width: 1110px;
+  }
+}
+.textcube h2 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 32.96px;
+  line-height: 39.32px;
+  color: white;
+  margin-bottom: 36px;
+}
+.textcube h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 35.96px;
+  color: white;
+}
+.textcube h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 51.67px;
+  line-height: 61.64px;
+  color: #fd84dc;
+}
+.textcube h4 span {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 36.99px;
+  color: white;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+.textcube h5 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 24.72px;
+  line-height: 29.49px;
+  color: white;
+}
+.textcube h5 span {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 24.72px;
+  line-height: 29.49px;
+  color: #ffdefc;
+  text-decoration: underline;
+}
+
+.uchastie h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  color: #efdaed;
+  margin-bottom: 63px;
+}
+.gradi {
+  background: linear-gradient(
+    239.57deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+  border: 2px solid white;
+  /* Размытие фона */
+  backdrop-filter: blur(30px); /* Градиентный фон */
+  padding: 20px;
+  border-radius: 15px;
+  width: 45%;
+  position: absolute;
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    214.03deg,
+    #adadad -2.79%,
+    rgba(173, 173, 173, 0) 99.41%
+  );
+}
+
+.oznak {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.omitsa {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.omitsa h3 {
+  font-family: Gilroy;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.25px;
+  color: white;
+}
+
+.progress-bar1 {
+  display: flex;
+  gap: 4px;
+}
+
+.pink {
+  width: 20px;
+  height: 53px;
+  background-color: #ff7bcb;
+  border-radius: 5px;
+}
+
+.empty {
+  width: 20px;
+  height: 53px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.gradi h4 {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.gradi ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+}
+
+.gradi li {
+  font-family: Gilroy;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  position: relative;
+  padding-left: 20px; /* Отступ, чтобы текст не заходил на кружок */
+  margin-bottom: 8px;
+}
+
+.gradi li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 50%;
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  width: 6px; /* Размер кружочка */
+  height: 6px;
+  background-color: white; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.fullgradi {
+  background: url(../img/zavituchka.png) no-repeat;
+  background-position: center 30px;
+  min-height: 1000px;
+}
+.fullgradi > .gradi:nth-child(1) {
+  left: 5%;
+  width: 544px;
+}
+.fullgradi > .gradi:nth-child(2) {
+  top: 120px;
+  right: 0%;
+  width: 460px;
+}
+.fullgradi > .gradi:nth-child(3) {
+  top: 520px;
+  right: 5%;
+  width: 428px;
+}
+.fullgradi > .gradi:nth-child(4) {
+  top: 320px;
+  right: 45%;
+  width: 416px;
+}
+.fullgradi > .gradi:nth-child(5) {
+  top: 680px;
+  left: 5%;
+  width: 481px;
+}
+.fullgradi {
+  position: relative;
+}
+@media (min-width: 1400px) {
+  .fullgradi {
+    justify-content: center; /* Центрируем элементы, если экран широкий */
+  }
+}
+.verhkrug {
+  position: absolute;
+  z-index: -1;
+  left: 30%;
+  top: -5%;
+}
+.rightkrug {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 20%;
+}
+.nizkrug {
+  position: absolute;
+  z-index: -1;
+  top: 40%;
+}
+.gradi h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  line-height: 23.25px;
+  font-size: 23.25px;
+  color: white;
+}
+.gradi h6 {
+  font-family: Gilroy;
+  font-size: 45.79px;
+  line-height: 54.63px;
+  font-weight: 600;
+  color: #fd84dc;
+}
+.gradi h6 span {
+  font-family: Gilroy;
+  font-size: 27.48px;
+  line-height: 32.78px;
+  font-weight: 600;
+  color: white;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.price {
+  margin-top: 140px;
+}
+.price h2 {
+  font-family: Kreadon;
+  font-weight: 500;
+  line-height: 45.5px;
+  font-size: 35px;
+  color: #efdaed;
+  width: 90%;
+  margin-bottom: 69px;
+}
+.price h3 {
+  font-family: Gilroy;
+  line-height: 18.56px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.vznos {
+  padding: 32px;
+  border-top: 1px solid #efdaed;
+  border-bottom: 1px solid #efdaed;
+  border-left: 1px solid #efdaed;
+  border-radius: 20px;
+  height: 199px;
+}
+.vznos h4 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29.43px;
+  color: white;
+  margin-bottom: 32px;
+}
+.nomin {
+  display: flex;
+  justify-content: space-between;
+}
+.nomin p {
+  font-family: Gilroy;
+  line-height: 18.56px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.nomin h5 {
+  font-family: Gilroy;
+  font-weight: 600;
+  line-height: 21.47px;
+  font-size: 18px;
+  color: white;
+}
+.lin {
+  border: 1px solid #ffffff80;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.liniya1 {
+  border: 1px solid #efdaed;
+  height: 156px;
+  width: 1px;
+}
+.sale {
+  border-radius: 20px;
+  padding: 32px;
+  border-top: 1px solid #efdaed;
+  border-bottom: 1px solid #efdaed;
+  border-right: 1px solid #efdaed;
+  height: 199px;
+}
+.sale span {
+  font-family: Gilroy;
+  font-weight: 600;
+  line-height: 21.47px;
+  font-size: 18px;
+  color: white;
+  margin-left: 40px;
+}
+.sale h6 {
+  font-family: Gilroy;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  color: white;
+}
+.pod {
+  font-family: Gilroy;
+  line-height: 18.56px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+.slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  position: absolute;
+  top: 10px;
+  z-index: 2;
+}
+
+/* Линия слайдера (цветной трек) */
+.slider-track {
+  position: absolute;
+  height: 4px;
+  border-radius: 4px;
+  top: 18px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to right,
+    #fd84dc var(--percent),
+    #818181 var(--percent)
+  );
+  z-index: 1;
+}
+
+/* Ползунок (кружок) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px #818181;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px #818181;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.submission-count {
+  position: absolute;
+  top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Gilroy;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.sale span {
+  margin-left: 20px;
+}
+.rules {
+  margin-top: 77px;
+}
+.rules h2 {
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45.5px;
+  color: #efdaed;
+}
+.rules h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  line-height: 18.56px;
+  font-size: 16px;
+  color: white;
+  margin-top: 35px;
+  width: 90%;
+}
+.reglament {
+  padding: 16px;
+  border-radius: 30px;
+  border: 2px solid white;
+  width: 131px;
+}
+.reglament p {
+  font-family: Gilroy;
+  font-weight: 500;
+  line-height: 23.54px;
+  font-size: 20px;
+  color: white;
+}
+.rules {
+  position: relative;
+}
+.rules h4 {
+  font-size: 11px;
+  line-height: 14.12px;
+  font-family: Gilroy;
+  font-weight: 500;
+  color: #ffffff80;
+  margin-top: 16px;
+  width: 90%;
+}
+.marginreg {
+  margin-top: 40px;
+}
+.leftellipse {
+  position: absolute;
+  top: -70%;
+  left: 0;
+}
+.orgi {
+  margin-top: 212px;
+  position: relative;
+}
+.orgi h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  color: #efdaed;
+}
+.orgi h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+}
+.textorgi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.manager {
+  display: flex;
+  align-items: center;
+}
+.socseti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socseti h4 {
+  font-family: Kreadon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #cf8ece;
+}
+.vk {
+  border: 1px solid #cf8ece;
+  border-radius: 35px;
+  padding: 23px 24px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 30px;
+  z-index: 3;
+}
+.tg {
+  border: 1px solid #cf8ece;
+  border-radius: 35px;
+  padding: 23px 24px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 15px;
+  z-index: 2;
+}
+.wp {
+  border: 1px solid #cf8ece;
+  border-radius: 35px;
+  padding: 23px 24px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  z-index: 1;
+}
+.irina {
+  background-color: #1515151a;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  padding: 52px 37px;
+  position: relative;
+  height: 519px;
+}
+.imgirina {
+  margin-left: 29px;
+  margin-right: 51px;
+}
+.orgi h5 {
+  font-family: Kreadon;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32.5px;
+  color: white;
+  margin-bottom: 38px;
+}
+.opis ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 16px; /* Немного отступа для маркеров */
+  width: 86%;
+}
+
+.opis li {
+  font-family: Kreadon;
+  font-weight: 500;
+  line-height: 21.6px; /* Уменьшаем межстрочный интервал, чтобы текст выглядел ровнее */
+  font-size: 18px;
+  color: white;
+  position: relative; /* Нужно для правильного позиционирования ::before */
+  padding-left: 12px; /* Отступ слева для текста, чтобы не наезжал на кружок */
+}
+
+.opis li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 10px; /* Подгоняем кружок к первой строке */
+  width: 3px; /* Увеличиваем размер кружочка для лучшей видимости */
+  height: 3px;
+  background-color: white; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.zakoruchka {
+  position: absolute;
+  right: 0;
+  top: 7%;
+}
+.socseti {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем элементы */
+}
+
+.vk,
+.tg,
+.wp {
+  border: 1px solid #cf8ece;
+  border-radius: 50%; /* Делаем круглую форму */
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151515; /* Цвет фона совпадает с общим фоном */
+  position: relative;
+}
+
+.vk {
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.tg {
+  margin-top: 2px;
+  z-index: 2;
+}
+
+.wp {
+  margin-top: 2px;
+  z-index: 3;
+}
+.kasach {
+  margin-top: 26%;
+  margin-bottom: 57px !important;
+  margin-left: 20px;
+}
+.kacashul {
+  width: 100% !important;
+  border: 3px solid red;
+}
+.lentochka {
+  position: absolute;
+  top: 25%;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+.skitluxe h2 {
+  font-family: Kreadon;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+  color: white;
+  margin-bottom: 24px;
+}
+.skitluxe {
+  margin-left: 77px;
+  width: 35%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.skitluxe h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  line-height: 23.54px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+.podrobnee {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  gap: 8px;
+  max-width: max-content;
+  border-radius: 59.63px;
+}
+.podrobnee h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23.86px;
+  letter-spacing: 0%;
+  color: black;
+}
+.magazine {
+  height: 751px;
+  background: url(../img/backzavit.png) no-repeat;
+  background-size: cover;
+  background-position: center 30px;
+  position: relative;
+  margin: 0 auto; /* Центрирует секцию */
+  width: 100%; /* Растягивает на всю доступную ширину */
+}
+@media (min-width: 1400px) {
+  .magazine {
+    max-width: 1230px;
+  }
+}
+.glanets {
+  background: linear-gradient(
+    108.46deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    91.2deg,
+    #adadad 0%,
+    rgba(173, 173, 173, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+}
+.formargin {
+  height: 54%;
+  width: 100%;
+}
+.magazines {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 22%;
+}
+.prizes {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.prizes h2 {
+  font-family: Kreadon;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45.5px;
+  color: #efdaed;
+  margin-bottom: 52px;
+}
+@media (min-width: 1400px) {
+  .container-fluid {
+    width: 1230px;
+  }
+}
+.prizes h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+}
+.bigkubok {
+  width: 100%;
+}
+.footer {
+  background: linear-gradient(#151515cc, #151515cc),
+    url(../img/glitter.png) no-repeat;
+  background-size: cover;
+}
+.footpad {
+  padding-top: 78px;
+}
+.footer h2 {
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 18.83px;
+  color: white;
+  margin-bottom: 24px;
+}
+.footer h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.34px;
+  color: white;
+  margin-bottom: 24px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.56px;
+  color: white;
+}
+.telegram {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 18.56px;
+}
+.footlin {
+  width: 100%;
+  border: 1px solid #efdaed;
+  margin-top: 30px;
+  margin-bottom: 31px;
+}
+.footer h6 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.24px;
+  color: white;
+}
+.rightfoot {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.forfootik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.forsmalldivs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
