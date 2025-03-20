@@ -1,0 +1,205 @@
+body {
+  background-color: black;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Extrabold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-L.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-R.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-M.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kreadon";
+  src: url("../fonts/Kreadon-B.otf");
+  font-weight: 700;
+}
+.popup {
+  width: 65%;
+  position: relative;
+}
+.golographpopup {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+}
+.iks {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+.popup h2 {
+  font-family: Kreadon;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 30px;
+}
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  z-index: 1000; /* чтобы попап был выше всего остального */
+}
+
+.popup-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* затемнение */
+  z-index: -1; /* чтобы затемнение было позади попапа */
+}
+
+.popup {
+  position: relative;
+  border-radius: 15px;
+  border: 0.75px solid;
+  border-image-source: linear-gradient(
+    91.2deg,
+    #adadad 0%,
+    rgba(173, 173, 173, 0) 100%
+  );
+  background: linear-gradient(
+    108.46deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+  padding: 58px;
+  width: 70%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.popup h3 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 30px;
+}
+.leftside-popup {
+  width: 42%;
+}
+@media (max-width: 1230px) {
+  .leftside-popup {
+    width: 50%;
+  }
+}
+.leftside-popup p {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 23.25px;
+  color: white;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+.leftside-popup h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 45.79px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #fd84dc;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.leftside-popup h4 span {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 27.48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin: 0px 12.21px;
+}
+.leftside-popup h5 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  margin-bottom: 16px;
+  margin-top: 52px;
+}
+.popup-buttons {
+  display: flex;
+  gap: 8px;
+}
+.popup-button1 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14.12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  background: #df70bc;
+  padding: 14.12px;
+  border-radius: 26.47px;
+}
+.popup-button2 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14.12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  background: transparent;
+  border: 0.88px solid #efdaed;
+  padding: 14.12px;
+  border-radius: 26.47px;
+}

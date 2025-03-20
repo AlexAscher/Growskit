@@ -559,6 +559,9 @@ body {
   letter-spacing: 0%;
   color: #efdaed;
 }
+.specialbox::placeholder {
+  font-size: 14px !important;
+}
 .telephone {
   flex: 4 !important;
 }
@@ -679,4 +682,146 @@ body {
   .container-fluid {
     width: 1230px;
   }
+}
+.file-upload {
+  margin-top: 16px;
+  width: 100%;
+  height: 181px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.upload-btn {
+  background: #efdaed;
+
+  color: black;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 0;
+  transition: 0.3s;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 24px;
+}
+
+.upload-btn:hover {
+  background: #b75a9b;
+}
+.file-upload h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+}
+.file-upload h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed80;
+}
+.form-container li {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: 0%;
+  position: relative;
+  padding-left: 10px;
+  color: #adadad;
+}
+.ul-needed {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+  margin-top: 16px;
+}
+.ul-needed li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 50%;
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  width: 4px; /* Размер кружочка */
+  height: 4px;
+  background-color: #adadad; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.backButton {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  border: 1px solid #efdaed;
+  padding: 18px 24px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+}
+.next {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0e0e10;
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 30px;
+}
+.form-buttons {
+  margin-top: 32px;
+}
+.for-first-packets {
+  display: flex;
+  gap: 16px;
+}
+.text-content1 {
+  display: flex;
+  flex-direction: column;
+  color: #f3e3f7;
+  gap: 4px;
+}
+.text-content1 h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 13px;
+  color: #efdaed;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.priobr {
+  margin-left: 5px;
+}
+.rasskazat {
+  margin-bottom: 5%;
 }

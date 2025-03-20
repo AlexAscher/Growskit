@@ -147,12 +147,12 @@ body {
   align-items: center;
   padding: 24px;
   border-radius: 45px;
-  background-color: white;
   font-family: Gilroy;
   font-weight: 600;
   font-size: 24px;
   line-height: 28.63px;
   margin-top: 23px;
+  border: none;
 }
 .participate-btn img {
   margin-left: 8px;
@@ -523,6 +523,10 @@ body {
   );
   backdrop-filter: blur(30px);
 }
+.packet button {
+  margin-top: 30px; /* Отступ сверху */
+}
+
 .packets h4 {
   font-family: Gilroy;
   font-weight: 500;
@@ -562,13 +566,14 @@ body {
   padding: 16px;
   border: none;
   gap: 8px;
-  margin-top: 76px;
+  width: max-content;
   font-family: Gilroy;
   font-weight: 500;
   font-size: 16px;
   line-height: 18.83px;
   letter-spacing: 0%;
   color: black;
+  margin-top: 30px;
 }
 .forgap {
   --bs-gutter-x: 50px;
@@ -871,4 +876,379 @@ body {
   .container-fluid {
     width: 1230px;
   }
+}
+.file-upload {
+  margin-top: 16px;
+  width: 100%;
+  height: 181px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.upload-btn {
+  background: #efdaed;
+
+  color: black;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 0;
+  transition: 0.3s;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 24px;
+}
+
+.upload-btn:hover {
+  background: #b75a9b;
+}
+.file-upload h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+}
+.file-upload h5 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed80;
+}
+.form-container li {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  letter-spacing: 0%;
+  position: relative;
+  padding-left: 10px;
+  color: #adadad;
+}
+.ul-needed {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+  margin-top: 16px;
+}
+.ul-needed li::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Размещаем кружок слева */
+  top: 50%;
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  width: 4px; /* Размер кружочка */
+  height: 4px;
+  background-color: #adadad; /* Цвет кружочка */
+  border-radius: 50%;
+}
+.form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.backButton {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  border: 1px solid #efdaed;
+  padding: 18px 24px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+}
+.next {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #0e0e10;
+  background: #ffffff;
+  padding: 16px 24px;
+  border-radius: 30px;
+}
+.form-buttons {
+  margin-top: 32px;
+}
+select::after {
+  height: 6px;
+  width: 12px;
+}
+select {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #efdaed;
+  background: transparent;
+  border: 1px solid #efdaed80;
+  padding: 15px 20px; /* Увеличенный padding */
+  border-radius: 15px;
+  width: 100%;
+  appearance: none; /* Убираем стандартную стрелочку */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  background-image: url("../img/customstrelka.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center; /* Расположение стрелки */
+  background-size: 16px; /* Размер стрелочки */
+}
+
+/* Добавляем кастомную стрелку для Safari */
+select::-ms-expand {
+  display: none;
+}
+select option {
+  background: #1c1c1c; /* Тёмный фон */
+  color: #efdaed; /* Цвет текста */
+  font-size: 14px;
+  padding: 15px;
+  border-bottom: 1px solid #efdaed40; /* Линия между элементами */
+}
+
+/* При наведении */
+select option:hover {
+  background: #282828; /* Чуть светлее */
+}
+
+/* Выбранный элемент */
+select option:checked {
+  background: #df70bc; /* Цвет как у галочки */
+  color: white;
+}
+select option:hover {
+  background: #000 !important; /* Принудительный чёрный фон */
+}
+.info-text1 {
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+textarea {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #efdaed;
+  background: transparent; /* Если нужен прозрачный фон */
+  border: 1px solid #efdaed80;
+  padding: 15px 15px; /* Чтобы текст не прижимался к краям */
+  border-radius: 15px;
+  width: 100%;
+}
+textarea::placeholder {
+  color: #efdaed;
+}
+textarea {
+  height: 175px;
+  padding: 24px 16px;
+}
+.rightside-first {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.firstpacket {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.rightside-first h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #efdaed;
+}
+.firstpacket {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border: 1px solid #efdaed80;
+  padding: 16px;
+  border-radius: 20px;
+}
+input[type="radio"] {
+  display: none;
+}
+.firstpacket label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Кастомная радио-кнопка */
+.custom-radio {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: #ffffff;
+  position: relative;
+  margin-right: 12px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* Внутренний круг при выборе */
+input[type="radio"]:checked + label .custom-radio {
+  background: #df70bc;
+  border: 3.24px solid #ffffff;
+}
+
+/* Текстовый блок */
+.text-content {
+  display: flex;
+  flex-direction: column;
+  color: #f3e3f7;
+}
+
+.text-content h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.text-content h4 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+/* Изменение границы при выборе */
+input[type="radio"]:checked + label .firstpacket {
+  border: 3.24px solid #ffffff;
+}
+.vigoda {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.otherpackets {
+  border: 1px solid #efdaed80;
+  padding: 16px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+.leftside-packet {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.leftside-packet h3 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #efdaed;
+}
+.leftside-packet h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.otherpackets label {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.otherpackets ul {
+  list-style: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.otherpackets li {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.otherpackets li img {
+  margin-right: 8px;
+}
+.rightside-oplata {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.rightside-oplata h4 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.rightside-oplata {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.finish-oplata {
+  display: flex;
+  gap: 16px;
+}
+.finish-oplata img {
+  height: 55px;
+  width: 55px;
+}
+.form-buttons1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 32px;
 }

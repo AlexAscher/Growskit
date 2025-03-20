@@ -124,10 +124,47 @@ document.addEventListener("DOMContentLoaded", function () {
     track.style.setProperty("--percent", percent * 100 + "%");
 
     // Считаем скидку (500 ₽ за каждую работу)
-    const discount = val * 500;
+    const discount = val * 500 - 500;
     finalDiscount.textContent = discount.toLocaleString() + " ₽";
   }
 
   slider.addEventListener("input", updateSlider);
   updateSlider();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".for-faq, .for-faq1");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-item");
+    const plusIcon = question.querySelector("img:nth-child(2)");
+    const minusIcon = question.querySelector("img:nth-child(3)");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", function () {
+      const isVisible = answer.classList.contains("show");
+
+      // Закрываем все открытые
+      faqItems.forEach((el) => {
+        const elAnswer = el.querySelector(".faq-answer");
+        const elQuestion = el.querySelector(".faq-item");
+
+        elAnswer.classList.remove("show");
+        elAnswer.style.display = "none";
+        elQuestion.style.marginBottom = "0"; // Убираем отступ
+        el.querySelector("img:nth-child(2)").classList.remove("d-none");
+        el.querySelector("img:nth-child(3)").classList.add("d-none");
+      });
+
+      // Если блок был закрыт - открываем
+      if (!isVisible) {
+        answer.style.display = "block"; // Показать перед анимацией
+        setTimeout(() => {
+          answer.classList.add("show"); // Запускаем анимацию
+          question.style.marginBottom = "32px"; // Добавляем отступ
+        }, 10);
+        plusIcon.classList.add("d-none");
+        minusIcon.classList.remove("d-none");
+      }
+    });
+  });
 });
