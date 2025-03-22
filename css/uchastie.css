@@ -73,11 +73,6 @@ body {
   justify-content: space-between;
   padding: 0 77px;
 }
-@media (min-width: 1400px) {
-  .header {
-    max-width: 1346px;
-  }
-}
 .nav {
   display: flex;
   gap: 30px;

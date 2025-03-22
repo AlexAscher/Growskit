@@ -56,7 +56,11 @@ body {
     max-width: 1246px;
   }
 }
-
+@media (min-width: 1400px) {
+  .header {
+    max-width: 1400px;
+  }
+}
 @media (max-width: 768px) {
   .nav {
     display: none;

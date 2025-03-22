@@ -1,0 +1,136 @@
+.firstmain h2 {
+  text-align: center;
+  font-family: Kreadon;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #efdaed;
+}
+.firstmain h3 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+  margin-top: 36px;
+}
+.secondmain {
+  margin-top: 24px;
+}
+.secondmain h2 {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffdefc;
+}
+
+.category {
+  width: max-content;
+  border: 2.6px solid #ffdefc;
+  padding: 24px;
+  border-radius: 39px;
+  margin-bottom: 32px;
+  padding-top: 24px;
+}
+.fio h2 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.fio {
+  background: black;
+  border-radius: 15px;
+  padding: 12px 16px;
+}
+.r-ugol {
+  display: flex;
+  gap: 8px;
+}
+.nominatsia h3 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: black;
+}
+.nominatsia {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 12px 16px;
+}
+.item {
+  background: url(../img/holoback.png) center no-repeat;
+  padding: 12px 10px;
+  height: 445.62762451171875px;
+  position: relative;
+  margin-bottom: 32px;
+}
+.participantimg {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+}
+.glav-ne-upusti h2 {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: white;
+}
+.ne-upusti {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+.glav-ne-upusti {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.glav-ne-upusti button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 45px;
+}
+.glav-ne-upusti button h3 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: black;
+}
+.category-row-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: black; /* Фон, чтобы нижние не просвечивали */
+  padding-bottom: 16px; /* Отступ для красоты */
+}
+.secondmain {
+  margin-top: 20px; /* Высота header + firstmain */
+  height: 100vh;
+  overflow-y: auto;
+}
